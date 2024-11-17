@@ -6,6 +6,8 @@ import MapView from "@arcgis/core/views/MapView"
 
 import { useEffect, useRef } from "react"
 
+import "../css/App.css"
+
 
 const route = '/v2/real-time/api/'
 const host = 'https://api-open.data.gov.sg'
@@ -101,11 +103,12 @@ export default function MapArea() {
       })
       return () => view
     }
-  }, [])
+  }, [mapDiv])
 
   return (
     <>
       <div
+        id="mapDiv"
         ref={mapDiv}
         className="mapDiv"
         style={{height: '100vh', width: "100%"}}
@@ -113,3 +116,27 @@ export default function MapArea() {
     </>
   )
 }
+
+// export default function MapArea() {
+//   const mapDiv = useRef(null);
+
+//   useEffect(() => {
+//     if (mapDiv.current) {
+//       new MapView({
+//         container: mapDiv.current,
+//         map: map
+//       })
+//     }
+//   }, [mapDiv]);
+
+//   return (
+//     <>
+//       <div
+//         id="mapDiv"
+//         ref={mapDiv}
+//         className="mapDiv"
+//         style={{height: '100vh', width: "100%"}}
+//       />
+//     </>
+//   )
+// }
