@@ -1,10 +1,12 @@
-import "@arcgis/map-components/dist/components/arcgis-map"
-import "@arcgis/map-components/dist/components/arcgis-zoom"
 
-import { ArcgisMap, ArcgisZoom } from "@arcgis/map-components-react"
 import Graphic from "@arcgis/core/Graphic"
 import GraphicsLayer from "@arcgis/core/layers/GraphicsLayer"
 import Map from "@arcgis/core/Map"
+
+import { ArcgisMap, ArcgisZoom } from "@arcgis/map-components-react"
+import "@arcgis/map-components/dist/components/arcgis-map"
+import "@arcgis/map-components/dist/components/arcgis-zoom"
+
 
 import "../css/App.css"
 
