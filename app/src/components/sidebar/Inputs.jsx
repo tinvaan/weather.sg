@@ -13,9 +13,9 @@ export function ConfigSubmit() {
             onClick={async () => {
               console.log("Button click!")
               const points = await populate(
-                document.getElementById('airTemp'),
-                document.getElementById('humidity'),
-                document.getElementById('rainfall')
+                document.getElementById('airTemp').checked,
+                document.getElementById('humidity').checked,
+                document.getElementById('rainfall').checked
               )
               await draw(points)
             }}
