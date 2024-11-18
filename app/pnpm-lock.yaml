@@ -17,6 +17,15 @@ importers:
       '@arcgis/map-components-react':
         specifier: ^4.31.5
         version: 4.31.5(@arcgis/core@4.31.3(@floating-ui/utils@0.2.8))(@esri/calcite-components@2.13.2(@floating-ui/utils@0.2.8))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@esri/calcite-components':
+        specifier: ^2.13.2
+        version: 2.13.2(@floating-ui/utils@0.2.8)
+      '@esri/calcite-components-react':
+        specifier: ^2.13.2
+        version: 2.13.2(@floating-ui/utils@0.2.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@esri/calcite-ui-icons':
+        specifier: ^3.32.0
+        version: 3.32.0
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -360,6 +369,12 @@ packages:
 
   '@esri/calcite-colors@6.1.0':
     resolution: {integrity: sha512-wHQYWFtDa6c328EraXEVZvgOiaQyYr0yuaaZ0G3cB4C3lSkWefW34L/e5TLAhtuG3zJ/wR6pl5X1YYNfBc0/4Q==}
+
+  '@esri/calcite-components-react@2.13.2':
+    resolution: {integrity: sha512-eOGLPnMBBSXbK8QbAXs+b2loVHglsPg4Mz9ccRXY7F3VrSQZtaKEjL7ks3Mc/vJe/gKwnBtRXi8TJifUuAUhDA==}
+    peerDependencies:
+      react: '>=16.7'
+      react-dom: '>=16.7'
 
   '@esri/calcite-components@2.13.2':
     resolution: {integrity: sha512-90v4H8zs2wEzUXQGmZ+joHhP7ulFUHmQjDlIwXylJiDvoChhnEm38iv7eeG+X8im06biIHEDGRB8LLszlQQ7jw==}
@@ -1815,6 +1830,14 @@ snapshots:
       xss: 1.0.13
 
   '@esri/calcite-colors@6.1.0': {}
+
+  '@esri/calcite-components-react@2.13.2(@floating-ui/utils@0.2.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@esri/calcite-components': 2.13.2(@floating-ui/utils@0.2.8)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    transitivePeerDependencies:
+      - '@floating-ui/utils'
 
   '@esri/calcite-components@2.13.2(@floating-ui/utils@0.2.8)':
     dependencies:
